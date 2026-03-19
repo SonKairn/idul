@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Idul Fitri 1447 H — Son Official</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Lora:ital,wght@0,400;0,600;1,400&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  background:#07060a;
+  font-family:'Outfit',sans-serif;
+  color:rgba(253,248,240,0.9);
+  overflow-x:hidden;min-height:100vh;
+}
+#cv{position:fixed;inset:0;z-index:0;pointer-events:none}
+.sky{
+  position:fixed;inset:0;z-index:0;pointer-events:none;
+  background:
+    radial-gradient(ellipse 70% 45% at 75% 5%,rgba(26,55,90,0.2) 0%,transparent 60%),
+    radial-gradient(ellipse 50% 35% at 15% 15%,rgba(26,74,46,0.13) 0%,transparent 55%),
+    linear-gradient(180deg,#07060a 0%,#0c0b0e 60%,#09080b 100%);
+}
+.igrid{
+  position:fixed;inset:0;z-index:0;pointer-events:none;opacity:.03;
+  background-image:url("data:image/svg+xml,%3Csvg width='72' height='72' viewBox='0 0 72 72' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' stroke='%23e0ac28' stroke-width='.7'%3E%3Cpolygon points='36,3 69,21 69,51 36,69 3,51 3,21'/%3E%3Cpolygon points='36,14 58,26 58,46 36,58 14,46 14,26'/%3E%3Cline x1='36' y1='3' x2='36' y2='69'/%3E%3Cline x1='3' y1='21' x2='69' y2='51'/%3E%3Cline x1='69' y1='21' x2='3' y2='51'/%3E%3C/g%3E%3C/svg%3E");
+  background-size:72px 72px;
+}
+.wrap{position:relative;z-index:1;max-width:680px;margin:0 auto;padding:0 22px 100px}
+
+/* ── HERO ── */
+.hero{
+  min-height:100vh;display:flex;flex-direction:column;
+  align-items:center;justify-content:center;
+  text-align:center;padding:60px 0 40px;
+}
+.moon-wrap{margin-bottom:26px;animation:mp 5s ease-in-out infinite}
+@keyframes mp{0%,100%{filter:drop-shadow(0 0 28px rgba(224,172,40,.38))}50%{filter:drop-shadow(0 0 55px rgba(224,172,40,.65))}}
+.eyebrow{font-size:10px;font-weight:600;letter-spacing:.5em;color:rgba(224,172,40,.65);text-transform:uppercase;margin-bottom:20px}
+.hero-title{font-family:'Playfair Display',serif;font-size:clamp(54px,13vw,100px);font-weight:900;line-height:.92;letter-spacing:-.02em;margin-bottom:10px}
+.hero-title .t1{display:block;color:rgba(253,248,240,.93)}
+.hero-title .t2{display:block;font-style:italic;font-weight:400;color:#f2c94c;font-size:.62em;margin-top:8px}
+.hero-hijri{font-size:11px;font-weight:600;letter-spacing:.45em;color:rgba(224,172,40,.45);text-transform:uppercase;margin-top:18px;margin-bottom:30px}
+.lanterns{display:flex;justify-content:center;gap:14px;align-items:flex-end;margin:0 0 34px}
+.ln{animation:sway 3.8s ease-in-out infinite;transform-origin:top center}
+.ln:nth-child(2){animation-delay:-1.2s;animation-duration:4.4s}
+.ln:nth-child(3){animation-delay:-2.4s;animation-duration:3.3s}
+.ln:nth-child(4){animation-delay:-.6s;animation-duration:4.9s}
+.ln:nth-child(5){animation-delay:-1.9s;animation-duration:3.6s}
+@keyframes sway{0%,100%{transform:rotate(-7deg)}50%{transform:rotate(7deg)}}
+
+/* scroll hint */
+.scroll-hint{display:flex;flex-direction:column;align-items:center;gap:10px;text-decoration:none;animation:bob 2.6s ease-in-out infinite;margin-top:4px}
+@keyframes bob{0%,100%{opacity:.38;transform:translateY(0)}50%{opacity:.85;transform:translateY(9px)}}
+.sh-txt{font-size:10px;font-weight:600;letter-spacing:.45em;color:rgba(224,172,40,.65);text-transform:uppercase}
+.sh-arr{width:22px;height:22px;border-right:1.5px solid rgba(224,172,40,.55);border-bottom:1.5px solid rgba(224,172,40,.55);transform:rotate(45deg);border-radius:2px}
+
+/* ── DIVIDER ── */
+.dg{display:flex;align-items:center;gap:14px;margin:50px 0 34px}
+.dg::before,.dg::after{content:'';flex:1;height:1px;background:linear-gradient(to right,transparent,rgba(224,172,40,.4),transparent)}
+.dg span{font-size:10px;font-weight:600;letter-spacing:.38em;color:rgba(224,172,40,.55);text-transform:uppercase;white-space:nowrap}
+
+/* ── COUNTDOWN ── */
+.cd-wrap{text-align:center;margin-bottom:16px}
+.cd-lbl-top{font-size:10px;font-weight:600;letter-spacing:.4em;color:rgba(224,172,40,.48);text-transform:uppercase;display:block;margin-bottom:14px}
+.cd-row{display:flex;justify-content:center;gap:10px;flex-wrap:wrap}
+.cd-unit{background:rgba(224,172,40,.07);border:1px solid rgba(224,172,40,.17);border-radius:4px;padding:12px 16px;min-width:64px}
+.cd-num{font-family:'Playfair Display',serif;font-size:32px;font-weight:700;color:#f2c94c;line-height:1;display:block}
+.cd-sub{font-size:9px;font-weight:600;letter-spacing:.2em;color:rgba(224,172,40,.42);text-transform:uppercase;margin-top:5px;display:block}
+
+/* ── HADITS ── */
+.hgrid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:14px}
+@media(max-width:500px){.hgrid{grid-template-columns:1fr}}
+.hcard{
+  background:linear-gradient(145deg,#131018,#0d0b10);
+  border:1px solid rgba(224,172,40,.14);
+  border-radius:4px;padding:24px 20px;
+  position:relative;overflow:hidden;
+  transition:border-color .3s,transform .3s;
+}
+.hcard:hover{border-color:rgba(224,172,40,.38);transform:translateY(-3px)}
+.hcard::before{content:'';position:absolute;top:0;left:0;right:0;height:1.5px;background:linear-gradient(90deg,transparent,rgba(224,172,40,.55),transparent)}
+.hcard.full{grid-column:1/-1}
+.hi{font-size:24px;display:block;margin-bottom:12px}
+.hq{font-family:'Lora',serif;font-style:italic;font-size:13.5px;line-height:1.8;color:rgba(242,201,76,.82);margin-bottom:10px}
+.hs{font-size:9px;font-weight:600;letter-spacing:.22em;color:rgba(224,172,40,.42);text-transform:uppercase;border-left:2px solid rgba(224,172,40,.28);padding-left:8px;margin-bottom:10px}
+.hb{font-family:'Lora',serif;font-style:italic;font-size:13px;line-height:1.75;color:rgba(253,248,240,.5)}
+
+/* ── MAAF CARD ── */
+.maaf-card{
+  background:linear-gradient(145deg,#131018,#0e0b12);
+  border:1px solid rgba(224,172,40,.17);
+  border-radius:4px;padding:48px 40px;
+  text-align:center;position:relative;overflow:hidden;
+}
+@media(max-width:480px){.maaf-card{padding:34px 20px}}
+.maaf-card::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,rgba(224,172,40,.65),transparent)}
+.maaf-card::after{content:'';position:absolute;bottom:-80px;right:-80px;width:220px;height:220px;border-radius:50%;background:radial-gradient(circle,rgba(224,172,40,.05) 0%,transparent 70%);pointer-events:none}
+.cn{position:absolute;width:30px;height:30px}
+.cn.tl{top:10px;left:10px;border-top:1px solid rgba(224,172,40,.38);border-left:1px solid rgba(224,172,40,.38)}
+.cn.tr{top:10px;right:10px;border-top:1px solid rgba(224,172,40,.38);border-right:1px solid rgba(224,172,40,.38)}
+.cn.bl{bottom:10px;left:10px;border-bottom:1px solid rgba(224,172,40,.38);border-left:1px solid rgba(224,172,40,.38)}
+.cn.br{bottom:10px;right:10px;border-bottom:1px solid rgba(224,172,40,.38);border-right:1px solid rgba(224,172,40,.38)}
+.ms{font-family:'Playfair Display',serif;font-size:clamp(15px,3.2vw,21px);font-style:italic;color:#f2c94c;margin-bottom:4px}
+.mtr{font-size:10px;letter-spacing:.14em;color:rgba(224,172,40,.38);margin-bottom:30px}
+.mb{font-family:'Lora',serif;font-size:clamp(15px,3vw,18px);font-weight:400;line-height:2.05;color:rgba(253,248,240,.82)}
+.mb strong{font-weight:600;color:#f2c94c}
+.mb em{font-style:italic;color:rgba(253,248,240,.5)}
+.msig{margin-top:32px}
+.msig-n{font-family:'Playfair Display',serif;font-size:20px;font-weight:700;color:rgba(253,248,240,.9)}
+.msig-s{font-size:10px;letter-spacing:.28em;color:rgba(224,172,40,.42);margin-top:5px;text-transform:uppercase}
+
+/* ── BERBAGI / QRIS ── */
+.berbagi-card{
+  background:linear-gradient(145deg,#0d1210,#090d0b);
+  border:1px solid rgba(45,122,79,.26);
+  border-radius:4px;padding:44px 36px;
+  text-align:center;position:relative;overflow:hidden;
+}
+@media(max-width:480px){.berbagi-card{padding:30px 18px}}
+.berbagi-card::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,rgba(45,122,79,.65),rgba(224,172,40,.5),rgba(45,122,79,.65),transparent)}
+.be{font-size:10px;font-weight:600;letter-spacing:.45em;color:rgba(45,122,79,.75);text-transform:uppercase;margin-bottom:14px}
+.bt{font-family:'Playfair Display',serif;font-size:clamp(26px,6vw,48px);font-weight:700;line-height:1.1;color:rgba(253,248,240,.92);margin-bottom:6px}
+.bt em{font-style:italic;color:#f2c94c;font-weight:400}
+.bsub{font-family:'Lora',serif;font-style:italic;font-size:clamp(13px,2.5vw,16px);color:rgba(253,248,240,.42);line-height:1.85;margin-bottom:36px}
+
+/* QRIS frame */
+.qris-frame{
+  display:inline-block;
+  background:linear-gradient(145deg,#131018,#0d0b10);
+  border:1px solid rgba(224,172,40,.2);
+  border-radius:4px;padding:26px 26px 20px;
+  position:relative;
+  box-shadow:0 24px 60px rgba(0,0,0,.55),inset 0 1px 0 rgba(224,172,40,.07);
+}
+.qris-frame::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,rgba(224,172,40,.6),transparent)}
+.qc{position:absolute;width:20px;height:20px}
+.qc.tl{top:8px;left:8px;border-top:1.5px solid rgba(224,172,40,.65);border-left:1.5px solid rgba(224,172,40,.65)}
+.qc.tr{top:8px;right:8px;border-top:1.5px solid rgba(224,172,40,.65);border-right:1.5px solid rgba(224,172,40,.65)}
+.qc.bl{bottom:8px;left:8px;border-bottom:1.5px solid rgba(224,172,40,.65);border-left:1.5px solid rgba(224,172,40,.65)}
+.qc.br{bottom:8px;right:8px;border-bottom:1.5px solid rgba(224,172,40,.65);border-right:1.5px solid rgba(224,172,40,.65)}
+.qris-box{width:240px;height:240px;background:#fff;border-radius:3px;overflow:hidden;display:flex;align-items:center;justify-content:center}
+.qris-ph{
+  width:100%;height:100%;display:flex;flex-direction:column;
+  align-items:center;justify-content:center;gap:10px;
+  background:#fff;padding:16px;cursor:pointer;transition:background .2s;
+}
+.qris-ph:hover{background:#f8f8f8}
+.qris-ph-icon{font-size:30px}
+.qris-ph-txt{font-size:11px;font-weight:600;color:rgba(14,12,9,.35);text-align:center;line-height:1.55;letter-spacing:.02em}
+.qbadge{margin-top:14px;display:flex;align-items:center;justify-content:center;gap:8px}
+.qbadge-txt{font-size:10px;font-weight:600;letter-spacing:.25em;color:rgba(224,172,40,.55);text-transform:uppercase}
+.qnote{font-size:11px;color:rgba(253,248,240,.28);margin-top:12px;line-height:1.7;text-align:center}
+
+
+
+/* ewallet chips */
+.ew-row{display:flex;justify-content:center;flex-wrap:wrap;gap:8px;margin-top:18px}
+.ew{font-size:10px;font-weight:500;color:rgba(253,248,240,.32);background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.07);border-radius:20px;padding:5px 12px}
+
+/* ── REVEAL ── */
+.rev{opacity:0;transform:translateY(26px);transition:opacity .75s cubic-bezier(.16,1,.3,1),transform .75s cubic-bezier(.16,1,.3,1)}
+.rev.vis{opacity:1;transform:none}
+.d1{transition-delay:.08s}.d2{transition-delay:.18s}.d3{transition-delay:.3s}
+
+/* footer */
+.footer{text-align:center;margin-top:60px;padding-bottom:10px}
+.footer p{font-size:10px;letter-spacing:.2em;color:rgba(253,248,240,.14);text-transform:uppercase;line-height:2.2}
+
+/* inline divider */
+.idv{display:flex;align-items:center;gap:14px;margin:26px auto 0;max-width:260px}
+.idv::before,.idv::after{content:'';flex:1;height:1px;background:linear-gradient(to right,transparent,rgba(224,172,40,.28),transparent)}
+.idv span{color:rgba(224,172,40,.4);font-size:11px}
+
+/* ── QRIS LIGHTBOX ── */
+.qris-box{cursor:zoom-in}
+.qlb{
+  position:fixed;inset:0;z-index:9999;
+  display:flex;align-items:center;justify-content:center;
+  background:rgba(7,6,10,0);
+  backdrop-filter:blur(0px);
+  transition:background .3s,backdrop-filter .3s;
+  pointer-events:none;
+}
+.qlb.open{
+  background:rgba(7,6,10,.88);
+  backdrop-filter:blur(12px);
+  pointer-events:all;
+}
+.qlb-inner{
+  position:relative;
+  transform:scale(.7);opacity:0;
+  transition:transform .35s cubic-bezier(.16,1,.3,1),opacity .35s cubic-bezier(.16,1,.3,1);
+}
+.qlb.open .qlb-inner{transform:scale(1);opacity:1}
+.qlb-frame{
+  background:linear-gradient(145deg,#1a1610,#120f08);
+  border:1px solid rgba(224,172,40,.35);
+  border-radius:6px;
+  padding:24px 24px 18px;
+  position:relative;
+  box-shadow:0 40px 100px rgba(0,0,0,.7),inset 0 1px 0 rgba(224,172,40,.12);
+}
+.qlb-frame::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,rgba(224,172,40,.8),transparent)}
+.qlb-qc{position:absolute;width:22px;height:22px}
+.qlb-qc.tl{top:9px;left:9px;border-top:1.5px solid rgba(224,172,40,.7);border-left:1.5px solid rgba(224,172,40,.7)}
+.qlb-qc.tr{top:9px;right:9px;border-top:1.5px solid rgba(224,172,40,.7);border-right:1.5px solid rgba(224,172,40,.7)}
+.qlb-qc.bl{bottom:9px;left:9px;border-bottom:1.5px solid rgba(224,172,40,.7);border-left:1.5px solid rgba(224,172,40,.7)}
+.qlb-qc.br{bottom:9px;right:9px;border-bottom:1.5px solid rgba(224,172,40,.7);border-right:1.5px solid rgba(224,172,40,.7)}
+.qlb-img{width:min(82vw,380px);height:min(82vw,380px);object-fit:contain;display:block;background:#fff;border-radius:3px}
+.qlb-label{margin-top:14px;text-align:center;font-size:10px;font-weight:600;letter-spacing:.3em;color:rgba(224,172,40,.55);text-transform:uppercase}
+.qlb-hint{margin-top:6px;text-align:center;font-size:11px;color:rgba(253,248,240,.25);letter-spacing:.05em}
+.qlb-close{
+  position:absolute;top:-14px;right:-14px;
+  width:32px;height:32px;border-radius:50%;
+  background:rgba(224,172,40,.15);
+  border:1px solid rgba(224,172,40,.35);
+  display:flex;align-items:center;justify-content:center;
+  cursor:pointer;font-size:14px;color:rgba(224,172,40,.8);
+  transition:background .2s,transform .2s;
+  line-height:1;
+}
+.qlb-close:hover{background:rgba(224,172,40,.3);transform:scale(1.1)}
+</style>
+</head>
+<body>
+<canvas id="cv"></canvas>
+<div class="sky"></div>
+<div class="igrid"></div>
+
+<div class="wrap">
+
+  <!-- ═══ HERO ═══ -->
+  <section class="hero" id="top">
+    <div class="moon-wrap">
+      <svg width="88" height="88" viewBox="0 0 88 88" fill="none">
+        <defs>
+          <radialGradient id="mg" cx="38%" cy="32%" r="62%">
+            <stop offset="0%" stop-color="#f5d060"/>
+            <stop offset="100%" stop-color="#b8860b"/>
+          </radialGradient>
+        </defs>
+        <path d="M56 8C36.7 8 21 23.7 21 43C21 62.3 36.7 78 56 78C45.5 78 37 67.2 37 54C37 40.8 45.5 30 56 30C66.1 30 74.5 38.4 75.8 49.1C76.5 44.2 76.6 49.8 76.6 43C76.6 23.7 75.3 8 56 8Z" fill="url(#mg)"/>
+        <path d="M66 7 L67.8 11.5 L72.5 11 L69.2 14 L70.5 18.5 L66 16 L61.5 18.5 L62.8 14 L59.5 11 L64.2 11.5 Z" fill="#f5d060" opacity=".88"/>
+        <circle cx="78" cy="18" r="2.5" fill="#f5d060" opacity=".68"/>
+        <circle cx="84" cy="32" r="1.5" fill="#f5d060" opacity=".48"/>
+      </svg>
+    </div>
+
+    <p class="eyebrow rev">Son Official · 1447 Hijriah</p>
+    <h1 class="hero-title rev d1">
+      <span class="t1">Idul Fitri</span>
+      <span class="t2">Minal 'Aidin Wal Faizin</span>
+    </h1>
+    <p class="hero-hijri rev d2">Sabtu, 21 Maret 2026</p>
+
+    <!-- Lanterns -->
+    <div class="lanterns rev d2">
+      <svg class="ln" width="20" height="46" viewBox="0 0 20 46"><rect x="7" y="0" width="6" height="6" rx="1" fill="#e0ac28" opacity=".48"/><rect x="2" y="6" width="16" height="26" rx="4" fill="rgba(224,172,40,.1)" stroke="#e0ac28" stroke-width="1"/><line x1="7" y1="6" x2="7" y2="32" stroke="#e0ac28" stroke-width=".6" opacity=".4"/><line x1="10" y1="6" x2="10" y2="32" stroke="#e0ac28" stroke-width=".6" opacity=".4"/><line x1="13" y1="6" x2="13" y2="32" stroke="#e0ac28" stroke-width=".6" opacity=".4"/><ellipse cx="10" cy="19" rx="5" ry="5" fill="rgba(255,210,60,.18)"/><rect x="7" y="32" width="6" height="4" rx="1" fill="#e0ac28" opacity=".43"/><line x1="10" y1="36" x2="10" y2="46" stroke="#e0ac28" stroke-width=".8" opacity=".33"/><polygon points="7,46 10,42 13,46" fill="#e0ac28" opacity=".38"/></svg>
+      <svg class="ln" width="24" height="54" viewBox="0 0 24 54"><rect x="8" y="0" width="8" height="8" rx="1.5" fill="#e0ac28" opacity=".58"/><rect x="2" y="8" width="20" height="32" rx="5" fill="rgba(224,172,40,.12)" stroke="#e0ac28" stroke-width="1.2"/><line x1="8" y1="8" x2="8" y2="40" stroke="#e0ac28" stroke-width=".65" opacity=".43"/><line x1="12" y1="8" x2="12" y2="40" stroke="#e0ac28" stroke-width=".65" opacity=".43"/><line x1="16" y1="8" x2="16" y2="40" stroke="#e0ac28" stroke-width=".65" opacity=".43"/><ellipse cx="12" cy="24" rx="6" ry="6" fill="rgba(255,210,60,.22)"/><rect x="8" y="40" width="8" height="6" rx="1" fill="#e0ac28" opacity=".52"/><line x1="12" y1="46" x2="12" y2="54" stroke="#e0ac28" stroke-width="1" opacity=".38"/><polygon points="8,54 12,50 16,54" fill="#e0ac28" opacity=".48"/></svg>
+      <svg class="ln" width="30" height="64" viewBox="0 0 30 64"><rect x="10" y="0" width="10" height="10" rx="2" fill="#e0ac28" opacity=".7"/><rect x="2" y="10" width="26" height="38" rx="6" fill="rgba(224,172,40,.14)" stroke="#e0ac28" stroke-width="1.5"/><line x1="9" y1="10" x2="9" y2="48" stroke="#e0ac28" stroke-width=".75" opacity=".46"/><line x1="15" y1="10" x2="15" y2="48" stroke="#e0ac28" stroke-width=".75" opacity=".46"/><line x1="21" y1="10" x2="21" y2="48" stroke="#e0ac28" stroke-width=".75" opacity=".46"/><ellipse cx="15" cy="29" rx="8" ry="8" fill="rgba(255,210,60,.26)"/><rect x="10" y="48" width="10" height="7" rx="1.5" fill="#e0ac28" opacity=".6"/><line x1="15" y1="55" x2="15" y2="64" stroke="#e0ac28" stroke-width="1.2" opacity=".44"/><polygon points="10,64 15,59 20,64" fill="#e0ac28" opacity=".58"/></svg>
+      <svg class="ln" width="24" height="54" viewBox="0 0 24 54"><rect x="8" y="0" width="8" height="8" rx="1.5" fill="#e0ac28" opacity=".58"/><rect x="2" y="8" width="20" height="32" rx="5" fill="rgba(224,172,40,.12)" stroke="#e0ac28" stroke-width="1.2"/><line x1="8" y1="8" x2="8" y2="40" stroke="#e0ac28" stroke-width=".65" opacity=".43"/><line x1="12" y1="8" x2="12" y2="40" stroke="#e0ac28" stroke-width=".65" opacity=".43"/><line x1="16" y1="8" x2="16" y2="40" stroke="#e0ac28" stroke-width=".65" opacity=".43"/><ellipse cx="12" cy="24" rx="6" ry="6" fill="rgba(255,210,60,.22)"/><rect x="8" y="40" width="8" height="6" rx="1" fill="#e0ac28" opacity=".52"/><line x1="12" y1="46" x2="12" y2="54" stroke="#e0ac28" stroke-width="1" opacity=".38"/><polygon points="8,54 12,50 16,54" fill="#e0ac28" opacity=".48"/></svg>
+      <svg class="ln" width="20" height="46" viewBox="0 0 20 46"><rect x="7" y="0" width="6" height="6" rx="1" fill="#e0ac28" opacity=".48"/><rect x="2" y="6" width="16" height="26" rx="4" fill="rgba(224,172,40,.1)" stroke="#e0ac28" stroke-width="1"/><line x1="7" y1="6" x2="7" y2="32" stroke="#e0ac28" stroke-width=".6" opacity=".4"/><line x1="10" y1="6" x2="10" y2="32" stroke="#e0ac28" stroke-width=".6" opacity=".4"/><line x1="13" y1="6" x2="13" y2="32" stroke="#e0ac28" stroke-width=".6" opacity=".4"/><ellipse cx="10" cy="19" rx="5" ry="5" fill="rgba(255,210,60,.18)"/><rect x="7" y="32" width="6" height="4" rx="1" fill="#e0ac28" opacity=".43"/><line x1="10" y1="36" x2="10" y2="46" stroke="#e0ac28" stroke-width=".8" opacity=".33"/><polygon points="7,46 10,42 13,46" fill="#e0ac28" opacity=".38"/></svg>
+    </div>
+
+    <!-- SCROLL HINT -->
+    <a class="scroll-hint" href="#konten">
+      <span class="sh-txt">Ada yang ingin kami sampaikan</span>
+      <div class="sh-arr"></div>
+    </a>
+  </section>
+
+  <!-- ═══ KONTEN ═══ -->
+  <div id="konten">
+
+    <!-- Countdown -->
+    <div class="cd-wrap rev">
+      <span class="cd-lbl-top">Menuju Hari Kemenangan</span>
+      <div class="cd-row">
+        <div class="cd-unit"><span class="cd-num" id="cd-d">00</span><span class="cd-sub">Hari</span></div>
+        <div class="cd-unit"><span class="cd-num" id="cd-h">00</span><span class="cd-sub">Jam</span></div>
+        <div class="cd-unit"><span class="cd-num" id="cd-m">00</span><span class="cd-sub">Menit</span></div>
+        <div class="cd-unit"><span class="cd-num" id="cd-s">00</span><span class="cd-sub">Detik</span></div>
+      </div>
+    </div>
+
+    <!-- Dalil -->
+    <div class="dg rev"><span>✦ Renungan Berbagi ✦</span></div>
+
+    <div class="hgrid">
+      <div class="hcard rev d1">
+        <span class="hi">🤲</span>
+        <p class="hq">"Tangan yang di atas lebih baik daripada tangan yang di bawah."</p>
+        <p class="hs">HR. Bukhari & Muslim</p>
+        <p class="hb">Berbagi di momen Idul Fitri adalah salah satu bentuk kemuliaan yang sangat dianjurkan.</p>
+      </div>
+      <div class="hcard rev d2">
+        <span class="hi">💛</span>
+        <p class="hq">"Sedekah tidak akan mengurangi harta — Allah justru akan menambahkannya."</p>
+        <p class="hs">HR. Muslim No. 2588</p>
+        <p class="hb">Setiap kebaikan yang diberikan akan kembali berlipat, di dunia maupun di akhirat.</p>
+      </div>
+      <div class="hcard rev d1">
+        <span class="hi">🌙</span>
+        <p class="hq">"Barang siapa memberi kebahagiaan kepada saudaranya di hari raya, Allah tidak akan membiarkan hatinya susah di hari kiamat."</p>
+        <p class="hs">Atsar Salaf</p>
+        <p class="hb">Membahagiakan sesama di hari raya adalah amal yang sangat berharga nilainya.</p>
+      </div>
+      <div class="hcard rev d2">
+        <span class="hi">📖</span>
+        <p class="hq">"Dan orang-orang yang dalam hartanya tersedia bagian tertentu bagi orang yang meminta dan yang tidak mempunyai apa-apa."</p>
+        <p class="hs">QS. Al-Ma'arij: 24–25</p>
+        <p class="hb">Allah menyebutkan secara langsung bahwa ada hak orang lain di dalam setiap harta yang kita miliki.</p>
+      </div>
+    </div>
+
+    <!-- Maaf -->
+    <div class="dg rev"><span>✦ Dari Son Official ✦</span></div>
+
+    <div class="maaf-card rev">
+      <div class="cn tl"></div><div class="cn tr"></div>
+      <div class="cn bl"></div><div class="cn br"></div>
+      <p class="ms">Assalamu'alaikum Warahmatullahi Wabarakatuh</p>
+      <p class="mtr">— Semoga keselamatan, rahmat, dan berkah Allah tercurah kepada kalian —</p>
+      <p class="mb">
+        Di hari yang penuh kemenangan dan kemuliaan ini,<br/>
+        seluruh keluarga besar <strong>Son Official</strong><br/>
+        mengucapkan selamat Idul Fitri 1447 H.<br/><br/>
+        <span style="font-family:'Playfair Display',serif;font-size:clamp(17px,3.5vw,22px);font-style:italic;color:#f2c94c">Taqabbalallahu Minna Wa Minkum</span><br/>
+        <em>Semoga Allah menerima amal ibadah kita semua</em><br/><br/>
+        Mohon maaf lahir dan batin atas segala kekurangan<br/>
+        dalam pelayanan kami — response yang terlambat,<br/>
+        proses yang kurang cepat, atau hal apapun<br/>
+        yang pernah kurang berkenan.<br/><br/>
+        Semoga hari raya ini membawa<br/>
+        <strong>kebahagiaan, kesehatan, dan keberkahan</strong><br/>
+        yang berlimpah untuk kita semua. Aamiin. 🤲
+      </p>
+      <div class="idv"><span>✦</span></div>
+      <div class="msig">
+        <p class="msig-n">Son Official</p>
+        <p class="msig-s">Game Shop · Hosting · Digital Store Indonesia</p>
+      </div>
+    </div>
+
+    <!-- Berbagi QRIS -->
+    <div class="dg rev"><span>✦ Berbagi Kebaikan ✦</span></div>
+
+    <div class="berbagi-card rev">
+      <div class="cn tl" style="border-color:rgba(45,122,79,.35)"></div>
+      <div class="cn tr" style="border-color:rgba(45,122,79,.35)"></div>
+      <div class="cn bl" style="border-color:rgba(45,122,79,.35)"></div>
+      <div class="cn br" style="border-color:rgba(45,122,79,.35)"></div>
+
+      <p class="be">Sedekah & Kebaikan</p>
+      <h2 class="bt">Titipkan <em>Kebaikan</em><br/>Lewat QRIS</h2>
+      <p class="bsub">
+        Jika tergerak untuk berbagi di hari yang mulia ini,<br/>
+        kami dengan tulus menyediakan jalannya.<br/>
+        Nominal bebas, niat yang ikhlas, insya Allah berkah. 🌿
+      </p>
+
+      <!-- ╔══════════════════════════════════════════════════╗ -->
+      <!-- ║  GANTI src="" di bawah dengan link QRIS kamu    ║ -->
+      <!-- ║  Contoh: src="https://i.imgur.com/abcdef.png"   ║ -->
+      <!-- ╚══════════════════════════════════════════════════╝ -->
+      <div style="display:flex;justify-content:center;margin-bottom:12px">
+        <div class="qris-frame">
+          <div class="qc tl"></div><div class="qc tr"></div>
+          <div class="qc bl"></div><div class="qc br"></div>
+          <div class="qris-box">
+            <img
+              src="https://files.catbox.moe/na38rm.jpg"
+              alt="QRIS Son Official"
+              id="qris-img"
+              style="width:100%;height:100%;object-fit:contain;display:block"
+              onerror="this.style.display='none';document.getElementById('qris-fallback').style.display='flex'"
+            />
+            <div id="qris-fallback" style="display:none;width:100%;height:100%;flex-direction:column;align-items:center;justify-content:center;gap:10px;background:#fff;padding:16px">
+              <span style="font-size:28px">📷</span>
+              <span style="font-size:11px;font-weight:600;color:rgba(14,12,9,.35);text-align:center;line-height:1.6"></span>
+            </div>
+          </div>
+          <div class="qbadge">
+            <svg width="13" height="13" viewBox="0 0 13 13" fill="none"><circle cx="6.5" cy="6.5" r="5.5" stroke="#e0ac28" stroke-width="1"/><path d="M4 6.5 L5.8 8.3 L9 5" stroke="#e0ac28" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <span class="qbadge-txt">QRIS · Son Official</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="ew-row">
+        <span class="ew">GoPay</span><span class="ew">OVO</span><span class="ew">Dana</span>
+        <span class="ew">ShopeePay</span><span class="ew">BCA</span><span class="ew">BRI</span>
+        <span class="ew">Mandiri</span><span class="ew">+ semua bank</span>
+      </div>
+
+      <p class="qnote" style="margin-top:20px">Semoga setiap kebaikan yang diberikan dibalas berlipat ganda oleh Allah SWT. 🤲</p>
+    </div>
+
+  </div><!-- /konten -->
+
+  <div class="footer rev">
+    <div style="display:flex;align-items:center;gap:14px;margin:0 auto 22px;max-width:280px">
+      <div style="flex:1;height:1px;background:linear-gradient(to right,transparent,rgba(224,172,40,.22),transparent)"></div>
+      <span style="color:rgba(224,172,40,.28);font-size:11px">✦</span>
+      <div style="flex:1;height:1px;background:linear-gradient(to right,transparent,rgba(224,172,40,.22),transparent)"></div>
+    </div>
+    <p>© 1447 H / 2026 M · Son Official</p>
+    <p>Selamat Idul Fitri · Minal 'Aidin Wal Faizin</p>
+    <p>Mohon Maaf Lahir & Batin 🌙</p>
+  </div>
+
+</div><!-- /wrap -->
+
+<!-- QRIS LIGHTBOX -->
+<div class="qlb" id="qlb" onclick="closeLB(event)">
+  <div class="qlb-inner">
+    <div class="qlb-frame">
+      <div class="qlb-qc tl"></div><div class="qlb-qc tr"></div>
+      <div class="qlb-qc bl"></div><div class="qlb-qc br"></div>
+      <div class="qlb-close" onclick="document.getElementById('qlb').classList.remove('open')">✕</div>
+      <img class="qlb-img" id="qlb-img" src="" alt="QRIS Son Official"/>
+      <p class="qlb-label">QRIS · Son Official</p>
+      <p class="qlb-hint">Arahkan kamera untuk scan 📷</p>
+    </div>
+  </div>
+</div>
+
+<script>
+/* STARFIELD */
+(()=>{
+  const c=document.getElementById('cv'),x=c.getContext('2d');let W,H,S;
+  const init=()=>{
+    W=c.width=window.innerWidth;
+    H=c.height=Math.max(document.body.scrollHeight,window.innerHeight*3);
+    S=Array.from({length:Math.floor(W*H/3800)},()=>({
+      x:Math.random()*W,y:Math.random()*H,
+      r:Math.random()*1.5+.2,a:Math.random()*.85+.1,
+      sp:Math.random()*.007+.002,ph:Math.random()*Math.PI*2
+    }));
+  };
+  const draw=t=>{
+    x.clearRect(0,0,W,H);
+    S.forEach(s=>{
+      const a=s.a*(.35+.65*Math.sin(t*s.sp*60+s.ph));
+      x.beginPath();x.arc(s.x,s.y,s.r,0,Math.PI*2);
+      x.fillStyle=s.r>1.1?`rgba(240,200,70,${a})`:`rgba(253,248,240,${a})`;
+      x.fill();
+    });
+    requestAnimationFrame(draw);
+  };
+  window.addEventListener('resize',init);init();requestAnimationFrame(draw);
+})();
+
+/* COUNTDOWN — Sabtu 21 Maret 2026 */
+(()=>{
+  const target=new Date('2026-03-21T00:00:00+07:00').getTime();
+  const pad=n=>String(n).padStart(2,'0');
+  const tick=()=>{
+    const diff=target-Date.now();
+    if(diff<=0){
+      ['cd-d','cd-h','cd-m','cd-s'].forEach(id=>document.getElementById(id).textContent='00');
+      document.querySelector('.cd-lbl-top').textContent='Selamat Hari Raya Idul Fitri 1447 H 🌙';
+      return;
+    }
+    document.getElementById('cd-d').textContent=pad(Math.floor(diff/86400000));
+    document.getElementById('cd-h').textContent=pad(Math.floor(diff%86400000/3600000));
+    document.getElementById('cd-m').textContent=pad(Math.floor(diff%3600000/60000));
+    document.getElementById('cd-s').textContent=pad(Math.floor(diff%60000/1000));
+  };
+  tick();setInterval(tick,1000);
+})();
+
+
+
+/* REVEAL */
+(()=>{
+  const io=new IntersectionObserver(e=>{
+    e.forEach(en=>{if(en.isIntersecting){en.target.classList.add('vis');io.unobserve(en.target)}});
+  },{threshold:.08});
+  document.querySelectorAll('.rev').forEach(el=>io.observe(el));
+})();
+
+/* QRIS LIGHTBOX */
+function openLB(){
+  const src=document.getElementById('qris-img').src;
+  document.getElementById('qlb-img').src=src;
+  document.getElementById('qlb').classList.add('open');
+  document.body.style.overflow='hidden';
+}
+function closeLB(e){
+  if(e.target===document.getElementById('qlb')||e.target.classList.contains('qlb-close')||e.target.closest('.qlb-close')){
+    document.getElementById('qlb').classList.remove('open');
+    document.body.style.overflow='';
+  }
+}
+document.addEventListener('keydown',e=>{if(e.key==='Escape'){document.getElementById('qlb').classList.remove('open');document.body.style.overflow=''}});
+document.getElementById('qris-img').addEventListener('click', openLB);
+document.querySelector('.qris-box').addEventListener('click', openLB);
+</script>
+</body>
+</html>
